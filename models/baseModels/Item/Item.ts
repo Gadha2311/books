@@ -29,6 +29,7 @@ export class Item extends Doc {
   itemGroup?: string;
   hsnCode?: number;
   hasSerialNumber?: boolean;
+  datafromErp?: boolean;
   uomConversions: UOMConversionItem[] = [];
 
   formulas: FormulaMap = {
@@ -188,5 +189,6 @@ export class Item extends Doc {
     trackItem: () => this.inserted,
     hasBatch: () => this.inserted,
     hasSerialNumber: () => this.inserted,
+    datafromErp: () => true,
   };
 }

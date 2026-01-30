@@ -189,6 +189,5 @@ export class Item extends Doc {
     trackItem: () => this.inserted,
     hasBatch: () => this.inserted,
     hasSerialNumber: () => this.inserted,
-    datafromErp: () => true,
   };
 }

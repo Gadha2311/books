@@ -322,7 +322,7 @@ export abstract class InvoiceItem extends Doc {
 
         return safeParseFloat(conversionItems[0]?.conversionFactor ?? 0);
       },
-      dependsOn: ['transferUnit'],
+      dependsOn: ['transferUnit', 'qty'],
     },
     account: {
       formula: () => {
